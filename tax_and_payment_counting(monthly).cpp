@@ -1,17 +1,22 @@
 #include <iostream>
 using namespace std;
-int rooms;
+int rooms{0};
 class taxes
 {
 public:
 	void counter() {
+		if(rooms>0){
 		cout << "\ntax percent : 6%"; 
 		cout << "\ncost per room : $" << tax_to_pay_for;
 		cout << "\ntotal payment for rooms : $" << tax_to_pay_for;
 		cout << "\ntaxes : $" << tax;
 		cout<<"\n=========================================================="
 		cout << "\nyou have to pay in total : $" << total;
-		cout << "IMPORTANT:valid for 30 days";
+		cout << "IMPORTANT:valid for 30 days";}
+		else{
+			cout<<"no payment required, have a totally nice day!";
+			return 0;
+		}
 	}
 
 private:
