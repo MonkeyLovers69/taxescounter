@@ -20,8 +20,8 @@ public:
 	}
 
 private:
-	double tax_percent{ 0.06 }; //to do math with percents
-	double paymentperRoom{ 30 }; 
+	const double tax_percent{ 0.06 }; //to do math with percents
+	const double paymentperRoom{ 30 }; 
 	double tax_to_pay_for{ paymentperRoom * rooms }; //counting what tax comes from
 	double tax{ (tax_to_pay_for * tax_percent) };//tax itself
 	double total{ (rooms * paymentperRoom) + tax };//just total for everything i mean c'mon who would've guessed lol .!.
